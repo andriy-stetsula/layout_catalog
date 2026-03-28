@@ -78,6 +78,7 @@ body {
   padding: 10 40px;
   width: 195px;
   border-radius: 5px;
+  transform: scale(1.2);
   height: 400px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border: 1px solid var(--color-white);
@@ -190,7 +191,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(4, 200);
+  grid-template-columns: repeat(4, 200px);
   gap: 48px 46px;
   justify-content: center;
   margin-top: 55px;
@@ -198,24 +199,24 @@ body {
 
 @media (min-width: 1px) {
   .container {
-    grid-template-columns: repeat(1, 200);
+    grid-template-columns: repeat(1, 200px);
   }
 }
 
 @media (min-width: 488px) {
   .container {
-    grid-template-columns: repeat(2, 200);
+    grid-template-columns: repeat(2, 200px);
   }
 }
 
 @media (min-width: 768px) {
   .container {
-    grid-template-columns: repeat(3, 200);
+    grid-template-columns: repeat(3, 200px);
   }
 }
 
 @media (min-width: 1024px) {
   .container {
-    grid-template-columns: repeat(4, 200);
+    grid-template-columns: repeat(4, 200px);
   }
 }

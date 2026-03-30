@@ -18,7 +18,6 @@ body {
   box-sizing: border-box;
 }
 
-
 .header {
   display: flex;
   flex-direction: row;
@@ -49,7 +48,7 @@ body {
   }
 
   &__link:hover {
-        transform: scale(1.2);
+    transform: scale(1.2);
     color: var(--color-blue);
   }
 }
@@ -82,6 +81,56 @@ body {
   height: 400px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border: 1px solid var(--color-white);
+
+  &__text {
+    color: var(--color-grey);
+    font-size: 12px;
+    line-height: 18px;
+    margin-left: -26px;
+    margin-top: -1px;
+  }
+
+  &__reviews {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__review {
+    margin-top: 10px;
+    font-size: 10px;
+    margin-right: -25px;
+    font-family: sans-serif;
+  }
+
+  &__inform {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -60px;
+  }
+
+  &__price {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    margin-right: -26px;
+    margin-top: -1px;
+  }
+
+  &__code {
+    color: var(--color-grey);
+    font-size: 10px;
+    margin-top: -6px;
+    margin-left: -25px;
+  }
+
+  &__title {
+    margin-top: 40px;
+    margin-right: -35px;
+    margin-left: -25px;
+    line-height: 18px;
+  }
 }
 
 .imac {
@@ -116,26 +165,6 @@ body {
   }
 }
 
-.reviews {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.review {
-  margin-top: 10px;
-  font-size: 10px;
-  margin-right: -25px;
-  font-family: sans-serif;
-}
-
-.info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: -60px;
-}
-
 .button {
   text-align: center;
   background-color: var(--color-blue);
@@ -158,36 +187,6 @@ body {
     color: var(--color-blue);
     border-color: var(--color-blue);
   }
-}
-
-.price {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 18px;
-  margin-right: -26px;
-  margin-top: -1px;
-
-  &_text {
-    color: var(--color-grey);
-    font-size: 12px;
-    line-height: 18px;
-    margin-left: -26px;
-    margin-top: -1px;
-  }
-}
-
-.product_code {
-  color: var(--color-grey);
-  font-size: 10px;
-  margin-top: -6px;
-  margin-left: -25px;
-}
-
-.text {
-  margin-top: 40px;
-  margin-right: -35px;
-  margin-left: -25px;
-  line-height: 18px;
 }
 
 .container {

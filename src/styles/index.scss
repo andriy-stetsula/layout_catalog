@@ -18,6 +18,7 @@ body {
   box-sizing: border-box;
 }
 
+
 .header {
   display: flex;
   flex-direction: row;
@@ -25,7 +26,7 @@ body {
   align-items: center;
   height: 58px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 10 40px;
+  padding: 10px 40px;
 }
 
 .nav {
@@ -44,12 +45,12 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     color: var(--color-black);
-    transition: color 0.2s;
+    transition: color 300ms;
   }
 
   &__link:hover {
+        transform: scale(1.2);
     color: var(--color-blue);
-    transition: color 0.2s;
   }
 }
 
@@ -75,7 +76,7 @@ body {
 .cart {
   display: flex;
   flex-direction: column;
-  padding: 10 40px;
+  padding: 10px 40px;
   width: 195px;
   border-radius: 5px;
   height: 400px;
@@ -151,7 +152,8 @@ body {
   text-transform: uppercase;
 
   &:hover {
-    border: 1px solid #00acdc;
+    border: 1px solid var(--color-blue);
+    transition: 300ms;
     background-color: var(--color-white);
     color: var(--color-blue);
     border-color: var(--color-blue);
@@ -191,7 +193,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: repeat(4, 200px);
-  gap: 48px 46px;
+  gap: 46px 48px;
   justify-content: center;
   margin-top: 55px;
 }

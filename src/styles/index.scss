@@ -79,7 +79,8 @@ body {
   display: flex;
   flex-direction: column;
   padding: 10px 40px;
-  width: 195px;
+    transition: 300ms;
+  width: 200px;
   border-radius: 5px;
   height: 400px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -102,7 +103,7 @@ body {
   &__review {
     margin-top: 10px;
     font-size: 10px;
-    margin-right: -28px;
+    margin-right: -22px;
     font-family: sans-serif;
   }
 
@@ -117,7 +118,7 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 18px;
-    margin-right: -26px;
+    margin-right: -22px;
     margin-top: -1px;
   }
 
@@ -131,8 +132,13 @@ body {
   &__title {
     margin-top: 40px;
     margin-right: -35px;
+      transition: 300ms;
     margin-left: -25px;
     line-height: 18px;
+  }
+
+  &:hover {
+    transform: scale(1.2)
   }
 }
 
@@ -178,6 +184,7 @@ body {
   color: white;
   font-weight: 700;
   font-size: 14px;
+  transition: 300ms;
   border-radius: 5px;
   margin-left: -26px;
   margin-top: 16px;
@@ -185,7 +192,6 @@ body {
 
   &:hover {
     border: 1px solid var(--color-blue);
-    transition: 300ms;
     background-color: var(--color-white);
     color: var(--color-blue);
     border-color: var(--color-blue);
@@ -197,7 +203,7 @@ body {
   grid-template-columns: repeat(4, 200px);
   gap: 46px 48px;
   justify-content: center;
-  margin-top: 55px;
+  margin: 50px 40px;
 }
 
 @media (min-width: 1px) {

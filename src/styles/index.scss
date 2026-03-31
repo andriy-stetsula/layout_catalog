@@ -23,16 +23,18 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 58px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 10px 40px;
+  height: 60px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 0 50px;
 }
 
 .nav {
-  margin-top: 23px;
+  padding: -120px;
+  margin-top: 25px;
 
   &__list {
     display: flex;
+    margin: -20px;
   }
 
   &__item {
@@ -54,7 +56,8 @@ body {
 }
 
 .logo {
-  margin-bottom: -5px;
+  margin-bottom: -3px;
+  margin-left: 0;
 }
 
 .is-active {
@@ -72,7 +75,7 @@ body {
   background-color: var(--color-blue);
 }
 
-.cart {
+.card {
   display: flex;
   flex-direction: column;
   padding: 10px 40px;
@@ -99,7 +102,7 @@ body {
   &__review {
     margin-top: 10px;
     font-size: 10px;
-    margin-right: -25px;
+    margin-right: -28px;
     font-family: sans-serif;
   }
 

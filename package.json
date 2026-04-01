@@ -4,10 +4,9 @@
   "description": "Frontend practice with catalog page",
   "scripts": {
     "init": "mate-scripts init",
-    "build-css": "sass src/styles/index.scss src/styles/index.css --no-source-map",
+    "start": "mate-scripts start",
     "format": "prettier --ignore-path .prettierignore --write './src/**/*.{html,css,scss}'",
     "lint": "npm run format && mate-scripts lint",
-    "start": "parcel src/index.html --open",
     "test:only": "mate-scripts test",
     "build": "mate-scripts build",
     "deploy": "mate-scripts deploy",
